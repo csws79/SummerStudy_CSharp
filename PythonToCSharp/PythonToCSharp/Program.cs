@@ -159,14 +159,29 @@ namespace PythonToCSharp
             int count = 0;
             while(true)
             {
-                int n;
+                int n = 0;
                 Console.WriteLine("1. Square 2. Triangle 3. Circle 4. Cube 5. Sphere 6. Exit");
-                n = Int32.Parse(Console.ReadLine());
+                try 
+                {
+                    n = Int32.Parse(Console.ReadLine()); 
+                }
+                catch
+                {
+                    Console.WriteLine("You did not input right number.");
+                    continue;
+                }
                 if(n == 1)
                 {
+                    double defaultSize = 0;
                     Console.WriteLine("Input Side of Shape: ");
-                    double defaultSize = Int32.Parse(Console.ReadLine());
-                    
+                    try
+                    {
+                        defaultSize = Int32.Parse(Console.ReadLine());
+                    }
+                    catch (FormatException ex)
+                    {
+                        Console.WriteLine("You did not input right number.");
+                    }
                     foreach (TwoDim two in twoList)
                     {
                         if (two.info == n && two.defaultSize == defaultSize)
@@ -189,9 +204,16 @@ namespace PythonToCSharp
                 }
                 else if(n == 2)
                 {
+                    double defaultSize = 0;
                     Console.WriteLine("Input Side of Shape: ");
-                    double defaultSize = Int32.Parse(Console.ReadLine());
-
+                    try
+                    {
+                        defaultSize = Int32.Parse(Console.ReadLine());
+                    }
+                    catch (FormatException ex)
+                    {
+                        Console.WriteLine("You did not input right number.");
+                    }
                     foreach (TwoDim two in twoList)
                     {
                         if (two.info == n && two.defaultSize == defaultSize)
@@ -214,9 +236,16 @@ namespace PythonToCSharp
                 }
                 else if(n == 3)
                 {
+                    double defaultSize = 0;
                     Console.WriteLine("Input Side of Shape: ");
-                    double defaultSize = Int32.Parse(Console.ReadLine());
-
+                    try
+                    {
+                        defaultSize = Int32.Parse(Console.ReadLine());
+                    }
+                    catch (FormatException ex)
+                    {
+                        Console.WriteLine("You did not input right number.");
+                    }
                     foreach (TwoDim two in twoList)
                     {
                         if (two.info == n && two.defaultSize == defaultSize)
@@ -239,9 +268,16 @@ namespace PythonToCSharp
                 }
                 else if(n == 4)
                 {
+                    double defaultSize = 0;
                     Console.WriteLine("Input Side of Shape: ");
-                    double defaultSize = Int32.Parse(Console.ReadLine());
-
+                    try
+                    {
+                        defaultSize = Int32.Parse(Console.ReadLine());
+                    }
+                    catch (FormatException ex)
+                    {
+                        Console.WriteLine("You did not input right number.");
+                    }
                     foreach (ThreeDim three in threeList)
                     {
                         if (three.info == n && three.defaultSize == defaultSize)
@@ -264,9 +300,16 @@ namespace PythonToCSharp
                 }
                 else if(n == 5)
                 {
+                    double defaultSize = 0;
                     Console.WriteLine("Input Side of Shape: ");
-                    double defaultSize = Int32.Parse(Console.ReadLine());
-
+                    try
+                    {
+                        defaultSize = Int32.Parse(Console.ReadLine());
+                    }
+                    catch (FormatException ex)
+                    {
+                        Console.WriteLine("You did not input right number.");
+                    }
                     foreach (ThreeDim three in threeList)
                     {
                         if (three.info == n && three.defaultSize == defaultSize)
@@ -293,7 +336,7 @@ namespace PythonToCSharp
                 }
                 else
                 {
-                    Console.WriteLine("Wrong input");
+                    Console.WriteLine("You input invalid range of integer number");
                 }
             }
         }

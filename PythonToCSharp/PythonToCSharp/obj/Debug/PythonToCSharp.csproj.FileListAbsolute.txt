@@ -7,3 +7,6 @@ c:\users\이태현\documents\visual studio 2013\Projects\PythonToCSharp\PythonTo
 C:\Users\이태현\Desktop\SummerStudy_CSharp\PythonToCSharp\PythonToCSharp\bin\Debug\PythonToCSharp.exe.config
 C:\Users\이태현\Desktop\SummerStudy_CSharp\PythonToCSharp\PythonToCSharp\obj\Debug\PythonToCSharp.exe
 C:\Users\이태현\Desktop\SummerStudy_CSharp\PythonToCSharp\PythonToCSharp\obj\Debug\PythonToCSharp.pdb
+C:\Users\이태현\Desktop\SummerStudy_CSharp\PythonToCSharp\PythonToCSharp\bin\Debug\PythonToCSharp.exe
+C:\Users\이태현\Desktop\SummerStudy_CSharp\PythonToCSharp\PythonToCSharp\bin\Debug\PythonToCSharp.pdb
+C:\Users\이태현\Desktop\SummerStudy_CSharp\PythonToCSharp\PythonToCSharp\obj\Debug\PythonToCSharp.csprojResolveAssemblyReference.cache
